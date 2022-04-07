@@ -1,2 +1,35 @@
-# GIAS-BAK
-毕业生信息审核系统
+# 学生毕业审核系统
+
+## 配置参数
+
+```.dotenv
+# django
+DEBUG=True
+DATABASE_URL=sqlite:///database/db.sqlite3
+SECRET_KEY=django-insecure-p2sztu3d8)%)552^lthu(+-=(%+nededa2a-*^hwb8y0^b*arm
+
+# super-x
+SUPER_X_HOST=172.168.11.36
+SUPER_X_PORT=4401
+SUPER_X_USER=usr_pdm
+SUPER_X_PASSWORD=wm1OS7O^YN
+SUPER_X_DATABASE=super_x
+
+# jwt
+ACCESS_TOKEN_LIFETIME=12
+REFRESH_TOKEN_LIFETIME=24
+
+# q_cluster
+Q_CLUSTER_LABEL='Django Q'
+Q_CLUSTER_NAME=exporter_task
+Q_CLUSTER_ORM=default
+Q_CLUSTER_WORKERS=8
+Q_CLUSTER_RECYCLE=10
+Q_CLUSTER_COMPRESS=True
+Q_CLUSTER_SAVE_LIMIT=250
+Q_CLUSTER_QUEUE_LIMIT=500
+Q_CLUSTER_CPU_AFFINITY=1
+# minutes
+Q_CLUSTER_TIMEOUT=5
+Q_CLUSTER_RETRY=10
+```
